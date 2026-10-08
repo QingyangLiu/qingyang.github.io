@@ -430,6 +430,34 @@
             margin-bottom: 8px;
         }
 
+        .publication-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .publication-action {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 36px;
+            padding: 8px 14px;
+            border-radius: 999px;
+            border: 1px solid rgba(18, 60, 74, 0.18);
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-family: Arial, sans-serif;
+            font-size: 0.86rem;
+            font-weight: 700;
+        }
+
+        .publication-action:hover,
+        .publication-action:focus-visible {
+            background: var(--accent);
+            color: #fffdf8;
+        }
+
         .two-col {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -594,9 +622,13 @@
                     </div>
                     <div class="publication-list">
                         <div class="publication">
-                            <div class="card-title"><a href="static/Georegistration.pdf" target="_blank" rel="noreferrer noopener">Pixel-wise Geo-registration of Drone Images</a></div>
+                            <div class="card-title">Pixel-wise Geo-registration of Drone Images</div>
                             <div class="card-meta">Qingyang Liu, David G. Shatwell, Parth Parag Kulkarni, Mubarak Shah · Under Review</div>
                             <p class="prose">Introduces SkyReg, a geometry-aware drone-to-satellite geo-registration method together with SkyReg-130k and SkyReg-Bench for dense pixel-wise geographic alignment.</p>
+                            <div class="publication-actions">
+                                <a class="publication-action" href="https://parthpk.github.io/skyreg-webpage/" target="_blank" rel="noreferrer noopener">Project Page</a>
+                                <a class="publication-action" href="static/Georegistration.pdf" target="_blank" rel="noreferrer noopener">Paper</a>
+                            </div>
                         </div>
                         <div class="publication">
                             <div class="card-title"><a href="https://arxiv.org/abs/2509.04438" target="_blank" rel="noreferrer noopener">The Telephone Game: Evaluating Semantic Drift in Unified Models</a></div>
